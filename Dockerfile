@@ -10,6 +10,8 @@ RUN apk add --no-cache git build-base
 RUN apk add --update tzdata
 # Use curl to send API requests
 RUN apk add --update curl
+# Install nodejs as js runtime
+RUN apk add --update nodejs
 
 # debug
 RUN bundle version
